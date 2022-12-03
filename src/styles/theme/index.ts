@@ -16,6 +16,7 @@ export const theme = {
     red: {
       500: '#f75a68',
     },
+    white: '#fff',
   },
   fonts: {
     roboto: 'Roboto, sans-serif',

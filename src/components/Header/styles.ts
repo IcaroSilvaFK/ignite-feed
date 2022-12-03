@@ -1,20 +1,21 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
+  grid-area: header;
   width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.85rem;
 
   background: ${({ theme }) => theme.colors.gray[800]};
 
-  padding: 22px 0;
+  padding: 1.25rem 0;
 
   img {
-    width: 60px;
-    object-fit: cover;
+    height: 2rem;
+    object-fit: contain;
   }
 
   h1 {

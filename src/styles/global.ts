@@ -7,14 +7,17 @@ export const GlobalCSS = createGlobalStyle`
     box-sizing: border-box
   }
 
-  html,body,#root{
-    width: 100%;
-    height: 100%;
-
+  html,body,#root, button,input, textarea{
     font-family: ${({ theme }) => theme.fonts.roboto};
     font-size: 1rem;
-    background:${({ theme }) => theme.colors.gray[900]};
     -webkit-font-smoothing: antialiased;
+  }
+
+  html,body,#root, button,input, textarea{
+    width: 100%;
+    height: 100%;
+ 
+    background:${({ theme }) => theme.colors.gray[900]};
   }
 
   input,button{
@@ -34,7 +37,10 @@ export const GlobalCSS = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: inherit;
+   }
+
+  ul,ol {
+    list-style: none;
   }
 
 `;
